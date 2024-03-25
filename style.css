@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-bar {
+    height: 40px;
+    filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.1));
+    box-shadow: inset 0px -1px 0px #e6e9ed;
+    background-color: #EDF1FF;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+    }
+
+.top-bar .contact-info, .top-bar ul {
+    font-size: 16px;
+    color: #506a85;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+    margin: 0 50px;
+    }
+
+.top-bar .contact-info li, .top-bar ul li {
+    display: inline-block;
+    margin-right: 10px;
+    }
+
+.top-bar .contact-icon {
+    margin-right: 5px;
+    }
+
+.navbar {
+    height: 110px;
+    filter: drop-shadow(0px 1px 0px #e6e9ed);
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #506a85;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar-logo img{
+    height: 50px;
+    width: 150px;
+}
+.pages ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.pages ul li a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #506a85;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pages ul li a:hover {
+    color: #ffd700;
+}
+#searchBtn {
+    color: #506a85;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#home-body{
+    height: 77vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url('public/bgImg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+
+#home-content h1 {
+    width: 970px;
+    height: 80px;
+    font-size: 58px;
+    letter-spacing: 5px;
+    line-height: 88px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: "Lato";
+    text-align: center;
+}
+
+#home-content p {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+#home-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0px -2px 0px rgba(0,0,0,0.15);
+    background-color: #00bb9b;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+#home-content button:hover {
+    transform: scale(1.1);
+}
+
+#body-item{
+    height: 280px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#body-item h1{
+    width: 800px;
+    height: 60px;
+    font-size: 44px;
+    letter-spacing: 0px;
+    line-height: 54px;
+    color: #506a85;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+}
+#body-item #body-para{
+    color: #506a85;
+    font-family: "Lato";
+    text-align: center;
+    margin: 0 20vw;
+}
+#body-content{
+    display: flex;
+    margin-top: 50px;
+    margin: 0 50px;
+    padding: 30px;
+}
+#body-content i{
+    font-size: 40px;
+    margin-right: 15px;
+    color: #00bc9c;
+}
+#body-content #bulb, #body-content #star{
+    margin-left: 30px;
+}
+
+#body-content1, #body-content2, #body-content3{
+    height: 240px;
+    width: 300px;
+}
+#body-content1 h4, #body-content2 h4, #body-content3 h4{
+    width: 270px;
+    height: 30px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #506a85;
+    font-weight: 700;
+    font-family: "Lato";
+}
+#body-content1 p, #body-content2 p, #body-content3 p{
+    color: #506a85;
+    font-family: "Lato";
+}
+
+#checkoutwork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f5f7;
+    margin-top: 20px;
+    height: 560px;
+    width: 100%;
+}
+#checkoutwork h2{
+    width: 100vw;
+    height: 50px;
+    font-size: 44px;
+    letter-spacing: 0px;
+    line-height: 54px;
+    color: #506a85;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+    margin-bottom: 8px;
+}
+#checkoutwork p{
+    color: #506a85;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#checkout-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#checkout-content1, #checkout-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#checkout-content-header1 img, #checkout-content-header2 img {
+    height: 260px;
+    width: 300px;
+    object-fit: cover;
+}
+
+#checkout-content-body1, #checkout-content-body2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#clientMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#clientMessage h1 {
+    width: 800px;
+    height: 60px;
+    font-size: 44px;
+    letter-spacing: 0px;
+    line-height: 54px;
+    color: #506a85;
+    font-weight: 700;
+    font-family: "Lato";
+    text-align: center;
+}
+
+#clientMessage p {
+    font-family: "Lato";
+    text-align: center;
+    color: #506a85;
+    font-size: 1rem;
+    margin: 0 20vw;
+}
+
+#clientMessage button {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0px -2px 0px rgba(0,0,0,0.15);
+    background-color: #00bb9b;
+    transition: transform 0.3s ease;
+}
+#clientMessage button:hover {
+    transform: scale(1.1);
+}
+
+#home-footer{
+    height: 370px;
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+#home-footer #who-we-are,#home-footer #get-in-touch,#home-footer #free-update{
+    width: 400px;
+    height: auto;
+}
+#home-footer #who-we-are h1{
+    font-weight: 600;
+}
