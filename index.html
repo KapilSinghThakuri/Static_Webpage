@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Demo Website</title>
+    <!-- js link -->
+    <script type="text/javascript" src="script.js"></script>
     <!-- css link -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Boxicons icon -->
@@ -23,7 +25,7 @@
                     <li><span class="contact-icon mr-2"><i class='bx bxl-gmail'></i></span>info@reen.com</li>
                 </ul>
             </div>
-            <div class="col-md-6 text-md-end">
+            <div class="col-md-6 text-md-end social-media">
                 <ul>
                     <li><i class='bx bxl-facebook'></i></li>
                     <li><i class='bx bxl-google'></i></li>
@@ -40,7 +42,7 @@
     </div>
     <div class="pages">
         <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="#" class="active">HOME</a></li>
             <li><a href="#">PORTFOLIO</a></li>
             <li><a href="#">BLOG</a></li>
             <li><a href="#">PAGES</a></li>
@@ -49,8 +51,12 @@
             <li><a href="#">CONTENT</a></li>
         </ul>
     </div>
-    <div> <i class='bx bx-search-alt-2' id="searchBtn"></i> </div>
+    <div>
+        <i class='bx bx-search-alt-2' id="searchBtn"></i>
+        <i class='bx bx-menu pages-icon' id="menuBtn"></i>
+    </div>
 </nav>
+
 <div id="home-body">
     <div id="home-content">
         <h1>MADE FOR WEB DESIGNERS</h1>
@@ -60,6 +66,7 @@
         <button>GET STARTED NOW</button>
     </div>
 </div>
+
 <div id="body-item">
     <h1>Beautiful. Clean. Responive.</h1>
     <p id="body-para">Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -67,6 +74,7 @@
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident.</p>
 </div>
+
 <div id="body-content">
         <i class="fa-regular fa-heart"></i>
         <div id="body-content1">
@@ -127,23 +135,47 @@
         <a href="">More about us</a>
     </div>
     <div id="latest-work">
-
+        <h5>LATEST WORK</h5>
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
     </div>
     <div id="get-in-touch">
-        <h3>GET IN TOUCH</h3>
+        <h5>GET IN TOUCH</h5>
         <p>commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur</p>
-        <p>Locations</p>
-        <p>Contacts</p>
-        <p>info@reen.com</p>
+        <a> <i class='bx bx-current-location'></i> Locations</a>
+        <a> <i class='bx bxs-contact'></i> Contacts</a>
+        <a> <i class='bx bxl-gmail' ></i>  info@reen.com</a>
     </div>
     <div id="free-update">
-        <h3>FREE UPDATE</h3>
+        <h5>FREE UPDATE</h5>
         <p>ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla</p>
-        <input type="" name="">
-        <button>Search</button>
+        <form>
+            <input type="" name="" placeholder="Enter your email address">
+            <button>Subscribe</button>
+        </form>
     </div>
+</div>
+<div id="bottom-bar">
+    <div id="reserved">
+        <p>@2014 REEN. All right reserved.</p>
+    </div>
+    <div id="page-item">
+        <ul>
+            <li><a href="">Home</a> </li>
+            <li><a href="">Portfolio</a> </li>
+            <li><a href="">Blog</a> </li>
+            <li><a href="">Service</a> </li>
+            <li><a href="">About</a> </li>
+            <li><a href="">Contact</a> </li>
+        </ul>
+    </div>
+    <div id="scrolltop"> <img src="public/<Path>.png"> </div>
 </div>
 
 

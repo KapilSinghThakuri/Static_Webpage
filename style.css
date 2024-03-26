@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
+
 .top-bar {
     height: 40px;
     filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.1));
@@ -47,6 +51,7 @@
     font-size: 2.4rem;
     font-weight: 600;
     text-decoration: none;
+    margin-left: 85px; /* margin */
 }
 .navbar-logo img{
     height: 50px;
@@ -59,7 +64,7 @@
     display: flex;
 }
 .pages ul li a{
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     color: #506a85;
     font-weight: 700;
@@ -73,21 +78,20 @@
 }
 #searchBtn {
     color: #506a85;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
+    margin-right: 50px; /* margin */
 }
 
 #home-body{
     height: 77vh;
     width: 100%;
-    background-color: rgba(255, 255, 255, 1);
     background-image: url('public/bgImg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
 }
-
 #home-content {
     position: absolute;
     top: 50%;
@@ -95,6 +99,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 20px;
+    z-index: 1000;
 }
 
 #home-content h1 {
@@ -259,7 +264,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 30vh;
+    height: 35vh;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -306,17 +311,125 @@
 }
 
 #home-footer{
-    height: 370px;
+    height: 447px;
+    background-color: #2f3f51;
     width: 100%;
-    display: flex;
-    background-color: whitesmoke;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
-#home-footer #who-we-are,#home-footer #get-in-touch,#home-footer #free-update{
+
+#home-footer #who-we-are,#home-footer #get-in-touch,#home-footer #free-update, #home-footer #latest-work{
     width: 400px;
+    height: 249px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+#home-footer #who-we-are h5,#home-footer #get-in-touch h5,#home-footer #free-update h5, #home-footer #latest-work h5{
+    width: 270px;
     height: auto;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Lato";
+}
+#home-footer #who-we-are p,#home-footer #get-in-touch p,#home-footer #free-update p{
+    font-family: "Lato";
+    color: #506a85;
+    font-size: 1rem;
 }
 #home-footer #who-we-are h1{
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 700;
 }
+#home-footer #who-we-are a, #home-footer #get-in-touch a{
+    color: #ffffff;
+}
+#home-footer #free-update button{
+    width: 88px;
+    height: 35px;
+    color: #ffffff;
+    box-shadow: inset 0px 0px 0px rgba(0,0,0,0.15);
+    background-color: #00bb9b;
+}
+#home-footer #free-update form{
+    display: flex;
+}
+#home-footer #free-update input{
+    height: 35px;
+}
+#menuBtn{
+    color: #506a85;
+    font-size: 50px;
+    display: none;
+}
+#home-footer #latest-work .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+#home-footer #latest-work .grid-item{
+    width: 125px;
+    height: 85px;
+    background-color: #00bb9b;
+}
+
+#bottom-bar {
+    width: 100%;
+    height: 83px;
+    background-color: #273545;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+#bottom-bar #reserved {
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    color: #707e8c;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+}
+
+#bottom-bar #page-item ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#bottom-bar #page-item ul li {
+    margin-right: 20px;
+}
+
+#bottom-bar #page-item ul li:last-child {
+    margin-right: 0;
+}
+
+#bottom-bar #page-item ul li a {
+    font-size: 16px;
+    text-transform: none;
+    color: #506a85;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+    text-decoration: none;
+}
+#bottom-bar #scrolltop img{
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    color: #506a85;
+    cursor: pointer;
+}
+
+
+
+
+
